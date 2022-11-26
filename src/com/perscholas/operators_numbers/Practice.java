@@ -17,6 +17,12 @@ public class Practice {
 		bitwiseOperators();
 		
 		bitwiseOperator();
+		
+		postfixOperator();
+		
+		incrementsOfVariable();
+		
+		sumOperators();
 	}
 	
 	public static void intToBinaryLeft(int n) {
@@ -26,9 +32,7 @@ public class Practice {
 		// shifts bits by a given number to the left, adding bits, making them bigger
 		x = n << 1;
 		System.out.println("Decimal Shifted: " + x);
-		System.out.println("Binary Shifted: " + Integer.toBinaryString(x));
-		System.out.println();
-		
+		System.out.println("Binary Shifted: " + Integer.toBinaryString(x) + "\n");
 	}
 	
 	public static void intToBinaryRight(int n) {
@@ -38,32 +42,29 @@ public class Practice {
 		// shifts bits by a given number to the right, losing bits, making them smaller
 		x = n >> 2;
 		System.out.println("Decimal Shifted: " + x);
-		System.out.println("Binary Shifted: " + Integer.toBinaryString(x));
-		System.out.println();
-
+		System.out.println("Binary Shifted: " + Integer.toBinaryString(x) + "\n");
 	}
 
+	//	test & and | bitwise operators
 	public static void bitwiseOperators() {
 		int x, y, z;
 		x = 7;
 		y = 17;
 		
 		z = x & y;
-		
 		System.out.println(z);
 		System.out.println(Integer.toBinaryString(x&y));
 		System.out.println(x&y);
 		System.out.println();
-
 		
 		z = x | y;
 		System.out.println(z);
 		System.out.println(Integer.toBinaryString(x | y));
-		System.out.println(x|y);
-		System.out.println();
+		System.out.println((x|y) + "\n");
 
 	}
 	
+	// personal testing
 	public static void bitwiseOperator() {
 		int x, y, z;
 		x = 7;
@@ -89,8 +90,41 @@ public class Practice {
 		// should be a value of 0, does not go into negative numbers
 		z = x >> y;
 		System.out.println(z);
-		System.out.println(Integer.toBinaryString(z));
-		
+		System.out.println(Integer.toBinaryString(z) + "\n");		
 	}
+	
+	public static void postfixOperator() {
+		int x = 11;
+		System.out.println("Before Operator: " + x);
+		
+		x++;
+		System.out.println("After ++ Operator: " + x + "\n");
+	}
+	
+	public static void incrementsOfVariable() {
+		int x =  216;
+		System.out.println(x);
+		
+		x++;
+		System.out.println(x);
+		
+		x += 1;
+		System.out.println(x);
+		
+		++x;
+		System.out.println(x);
+		System.out.println(++x);
+
+	}
+	
+	public static void sumOperators() {
+		int x = 5;
+		int y = 8;
+		
+		//int sum = y + ++x;
+		System.out.println(y + x++);
+	}
+	
+	
 
 }
