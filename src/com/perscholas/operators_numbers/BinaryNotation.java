@@ -50,10 +50,8 @@ public class BinaryNotation {
         binToDecimal(0010);
         binToDecimal(1001);
         /*
-		00110100
-		0111 0010
-		0010 0001 1111
-		0010 1100 0110 0111
+		1 = 1
+		8 = 
          */
     }
 }
