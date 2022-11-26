@@ -29,8 +29,8 @@ public class BinaryNotation {
     	
     	while (binary != 0) {
     		remainder = binary % 10;
-    		binary /= 10;
     		decNumber += remainder * Math.pow(2, i);
+    		binary /= 10;
     		i++;
     	}
     	
@@ -40,14 +40,17 @@ public class BinaryNotation {
     // Main Driver Code
     public static void main(String[] args) { 
         // Calling Our Above Function
-        decToBinary(2);
+        decToBinary(787);
         System.out.println();
+        System.out.println(Integer.toBinaryString(8));
         System.out.println(Integer.toBinaryString(9));
         
-        System.out.println(Integer.parseInt("0010", 2));
+        System.out.println(Integer.parseInt("00110100",2));
         System.out.println(Integer.parseInt("1001", 2));
+        binToDecimal(0010);
+        binToDecimal(1001);
         /*
-		0011 0100
+		00110100
 		0111 0010
 		0010 0001 1111
 		0010 1100 0110 0111
