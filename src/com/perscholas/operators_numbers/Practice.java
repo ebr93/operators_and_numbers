@@ -1,7 +1,8 @@
 package com.perscholas.operators_numbers;
 
 public class Practice {
-
+	
+	/*
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		intToBinaryLeft(2);
@@ -24,8 +25,9 @@ public class Practice {
 		
 		sumOperators();
 	}
+	*/
 	
-	public static void intToBinaryLeft(int n) {
+	public void intToBinaryLeft(int n) {
 		int x = n;
 		System.out.println("Decimal: " + x);
 		System.out.println("Binary: " + Integer.toBinaryString(x));
@@ -35,7 +37,7 @@ public class Practice {
 		System.out.println("Binary Shifted: " + Integer.toBinaryString(x) + "\n");
 	}
 	
-	public static void intToBinaryRight(int n) {
+	public void intToBinaryRight(int n) {
 		int x = n;
 		System.out.println("Decimal: " + x);
 		System.out.println("Binary: " + Integer.toBinaryString(x));
@@ -46,7 +48,7 @@ public class Practice {
 	}
 
 	//	test & and | bitwise operators
-	public static void bitwiseOperators() {
+	public void bitwiseOperators() {
 		int x, y, z;
 		x = 7;
 		y = 17;
@@ -65,7 +67,7 @@ public class Practice {
 	}
 	
 	// personal testing
-	public static void bitwiseOperator() {
+	public void bitwiseOperator() {
 		int x, y, z;
 		x = 7;
 		y = 17;
@@ -93,7 +95,7 @@ public class Practice {
 		System.out.println(Integer.toBinaryString(z) + "\n");		
 	}
 	
-	public static void postfixOperator() {
+	public void postfixOperator() {
 		int x = 11;
 		System.out.println("Before Operator: " + x);
 		
@@ -101,7 +103,7 @@ public class Practice {
 		System.out.println("After ++ Operator: " + x + "\n");
 	}
 	
-	public static void incrementsOfVariable() {
+	public void incrementsOfVariable() {
 		int x =  216;
 		System.out.println(x);
 		
@@ -117,11 +119,11 @@ public class Practice {
 
 	}
 	
-	public static void sumOperators() {
+	public void sumOperators() {
 		int x = 5;
 		int y = 8;
 		
-		//int sum = y + ++x;
+		// int sum = y + ++x;
 		System.out.println(y + x++);
 	}
 	
