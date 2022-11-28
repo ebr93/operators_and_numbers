@@ -2,31 +2,6 @@ package com.perscholas.operators_numbers;
 
 public class Practice {
 	
-	/*
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		intToBinaryLeft(2);
-		intToBinaryLeft(9);
-		intToBinaryLeft(17);
-		intToBinaryLeft(88);
-
-		intToBinaryRight(150);
-		intToBinaryRight(225);
-		intToBinaryRight(1555);
-		intToBinaryRight(32456);
-		
-		bitwiseOperators();
-		
-		bitwiseOperator();
-		
-		postfixOperator();
-		
-		incrementsOfVariable();
-		
-		sumOperators();
-	}
-	*/
-	
 	public void intToBinaryLeft(int n) {
 		int x = n;
 		System.out.println("Decimal: " + x);
